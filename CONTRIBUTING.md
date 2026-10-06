@@ -3,7 +3,7 @@
 ## Errata
 
 If an example in the book does not reproduce, or a figure looks wrong, please
-[open an errata report](https://github.com/bitoollearner/postgresql-1000-examples-companion/issues/new?template=errata-report.md).
+[open an errata report](https://github.com/bitoollearner/postgresql-1000-examples/issues/new?template=errata-report.md).
 
 Include:
 
@@ -22,7 +22,7 @@ Errata are credited in the next revision unless you ask otherwise.
 ## Questions
 
 Questions about an example are welcome as
-[issues](https://github.com/bitoollearner/postgresql-1000-examples-companion/issues/new?template=question.md). Please include the example
+[issues](https://github.com/bitoollearner/postgresql-1000-examples/issues/new?template=question.md). Please include the example
 number.
 
 ## Pull requests

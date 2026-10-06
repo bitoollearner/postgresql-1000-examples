@@ -4,7 +4,7 @@ The practice environment for **[PostgreSQL: 1,000 Examples](https://www.amazon.c
 
 [![Practice image](https://img.shields.io/docker/v/bilearner/postgres1000-practice?label=docker&logo=docker)](https://hub.docker.com/r/bilearner/postgres1000-practice)
 [![Image size](https://img.shields.io/docker/image-size/bilearner/postgres1000-practice/latest?label=size)](https://hub.docker.com/r/bilearner/postgres1000-practice)
-[![Build](https://github.com/bitoollearner/postgresql-1000-examples-companion/actions/workflows/docker-image.yml/badge.svg)](https://github.com/bitoollearner/postgresql-1000-examples-companion/actions/workflows/docker-image.yml)
+[![Build](https://github.com/bitoollearner/postgresql-1000-examples/actions/workflows/docker-image.yml/badge.svg)](https://github.com/bitoollearner/postgresql-1000-examples/actions/workflows/docker-image.yml)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 ---
@@ -225,7 +225,7 @@ otherwise.
 ## Errata and questions
 
 Found a mistake in the book, or an example that does not reproduce?
-[Open an issue](https://github.com/bitoollearner/postgresql-1000-examples-companion/issues/new/choose). Errata reports are especially
+[Open an issue](https://github.com/bitoollearner/postgresql-1000-examples/issues/new/choose). Errata reports are especially
 welcome and are credited in the next revision.
 
 ---

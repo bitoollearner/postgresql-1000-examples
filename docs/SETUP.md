@@ -14,8 +14,8 @@ Or with Compose, which also gives you a named volume so your notebook edits
 survive:
 
 ```bash
-git clone https://github.com/bitoollearner/postgresql-1000-examples-companion.git
-cd postgresql-1000-examples-companion
+git clone https://github.com/bitoollearner/postgresql-1000-examples.git
+cd postgresql-1000-examples
 docker compose up -d
 ```
 

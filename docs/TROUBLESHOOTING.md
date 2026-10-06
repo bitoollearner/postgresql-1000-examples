@@ -79,5 +79,5 @@ correctly loaded database.
 
 ## Something else
 
-[Open an issue](https://github.com/bitoollearner/postgresql-1000-examples-companion/issues/new/choose) with the output of
+[Open an issue](https://github.com/bitoollearner/postgresql-1000-examples/issues/new/choose) with the output of
 `verify_env.py`.

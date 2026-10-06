@@ -4,7 +4,7 @@ Published as [`bilearner/postgres1000-practice`](https://hub.docker.com/r/bilear
 
 ## Using it
 
-See the [repository README](https://github.com/bitoollearner/postgresql-1000-examples-companion#start-practising-in-one-command).
+See the [repository README](https://github.com/bitoollearner/postgresql-1000-examples#start-practising-in-one-command).
 
 ## Building it yourself
 

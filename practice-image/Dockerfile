@@ -12,7 +12,7 @@ FROM postgres:16.15-bookworm
 LABEL org.opencontainers.image.title="PostgreSQL: 1,000 Examples -- Practice Environment" \
       org.opencontainers.image.description="PostgreSQL 16.15 with the book's seeded datasets preloaded, JupyterLab, and all 53 chapter notebooks." \
       org.opencontainers.image.authors="Bi Learner" \
-      org.opencontainers.image.source="https://github.com/bitoollearner/postgresql-1000-examples-companion" \
+      org.opencontainers.image.source="https://github.com/bitoollearner/postgresql-1000-examples" \
       org.opencontainers.image.licenses="MIT"
 
 # The cluster locale is pinned to C, and this is not a detail.
@@ -31,7 +31,14 @@ ENV LANG=C \
     POSTGRES_DB=pg1000 \
     PRACTICE_DIR=/practice \
     JUPYTER_PORT=8888 \
-    PYTHONUNBUFFERED=1
+    PYTHONUNBUFFERED=1 \
+    PYTHONUTF8=1
+
+# PYTHONUTF8 is set because LC_ALL=C is set. Current Pythons coerce a C locale
+# to C.UTF-8 (PEP 538) and are fine either way, but that behaviour belongs to
+# the base image rather than to us -- and the notebooks are full of en dashes,
+# so losing it would surface as a UnicodeDecodeError opening a notebook, which
+# is a baffling thing to debug from a locale setting three layers away.
 
 # PGDATA is deliberately NOT /var/lib/postgresql/data. The official image
 # declares that path as a VOLUME, so anything written there during the build

@@ -67,5 +67,5 @@ Your notebook edits live in `/practice` and survive restarts.
 
 ## Source
 
-[https://github.com/bitoollearner/postgresql-1000-examples-companion](https://github.com/bitoollearner/postgresql-1000-examples-companion) · MIT licensed.
+[https://github.com/bitoollearner/postgresql-1000-examples](https://github.com/bitoollearner/postgresql-1000-examples) · MIT licensed.
 The book's text and solutions are © Bi Learner.
