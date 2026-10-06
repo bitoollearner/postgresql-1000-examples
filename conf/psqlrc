@@ -1,0 +1,17 @@
+-- psql defaults for the practice container.
+-- Quiet, readable, and with the search_path the book assumes.
+\set QUIET 1
+\pset null '(null)'
+\pset linestyle unicode
+\pset border 2
+\timing on
+\set COMP_KEYWORD_CASE upper
+\set HISTSIZE 5000
+\set PROMPT1 '%/%R%# '
+
+SET search_path TO ecommerce, public;
+
+\unset QUIET
+\echo 'PostgreSQL: 1,000 Examples -- search_path is ecommerce, public'
+\echo 'Chapter 49 uses the hr schema: SET search_path TO hr, public;'
+\echo ''

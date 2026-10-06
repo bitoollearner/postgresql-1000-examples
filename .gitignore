@@ -1,0 +1,23 @@
+# generated data -- rebuilt by the generators in datasets/
+datasets/*/data/
+datasets/*/data_lg/
+*.tsv
+
+# notebook working state
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# never commit the book itself
+*.pdf

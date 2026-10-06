@@ -1,0 +1,30 @@
+# The published practice image. Nothing is built here -- `docker compose up`
+# pulls the image and starts it.
+#
+#   docker compose up -d        then open http://localhost:8888/lab
+#
+# To build the image yourself instead, see practice-image/README.md.
+services:
+  practice:
+    image: bilearner/postgres1000-practice:1.0
+    container_name: pg1000-practice
+    ports:
+      - "8888:8888"     # JupyterLab
+      - "5432:5432"     # PostgreSQL, for pgAdmin / DBeaver / DataGrip
+    environment:
+      # Set a token to require one in the browser. Empty means no token, which
+      # is the sensible default for a local practice container.
+      JUPYTER_TOKEN: ""
+    volumes:
+      # Your notebook edits live here and survive `docker compose down`.
+      - practice-work:/practice
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U book -d pg1000 -q"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
+
+volumes:
+  practice-work:

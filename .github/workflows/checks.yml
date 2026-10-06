@@ -1,0 +1,72 @@
+name: Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  repo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+
+      - name: Notebooks are valid and carry no solutions
+        run: python scripts/check_notebooks.py
+
+      - name: Dataset generators are deterministic
+        run: |
+          python datasets/ecommerce/generate.py --size sm --out /tmp/a >/dev/null
+          python datasets/ecommerce/generate.py --size sm --out /tmp/b >/dev/null
+          diff -r /tmp/a /tmp/b
+          python datasets/hr/generate.py --out /tmp/h1 >/dev/null
+          python datasets/hr/generate.py --out /tmp/h2 >/dev/null
+          diff -r /tmp/h1 /tmp/h2
+          echo "generators are byte-identical across runs"
+
+  datasets-load:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: book
+          POSTGRES_PASSWORD: book
+          POSTGRES_DB: pg1000
+        options: >-
+          --health-cmd "pg_isready -U book" --health-interval 10s
+          --health-timeout 5s --health-retries 5
+        ports: ["5432:5432"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - name: Load both schemas and check the row counts
+        env:
+          PGPASSWORD: book
+        run: |
+          python datasets/ecommerce/generate.py --size sm --out datasets/ecommerce/data
+          psql -h localhost -U book -d pg1000 -v ON_ERROR_STOP=1 \
+               -v schema=ecommerce -f datasets/ecommerce/ddl.sql
+          for t in categories customers products orders order_items payments returns; do
+            psql -h localhost -U book -d pg1000 -v ON_ERROR_STOP=1 \
+                 -c "\copy ecommerce.$t FROM datasets/ecommerce/data/$t.tsv"
+          done
+          python datasets/hr/generate.py --out datasets/hr/data
+          psql -h localhost -U book -d pg1000 -v ON_ERROR_STOP=1 \
+               -v schema=hr -f datasets/hr/ddl.sql
+          for t in departments salary_bands employees compensation \
+                   performance_reviews requisitions applications absences; do
+            psql -h localhost -U book -d pg1000 -v ON_ERROR_STOP=1 \
+                 -c "\copy hr.$t FROM datasets/hr/data/$t.tsv"
+          done
+          N=$(psql -h localhost -U book -d pg1000 -tAX \
+              -c "SELECT count(*) FROM ecommerce.order_items")
+          [ "$N" = "14998" ] || { echo "::error::order_items=$N"; exit 1; }
+          E=$(psql -h localhost -U book -d pg1000 -tAX \
+              -c "SELECT count(*) FROM hr.employees")
+          [ "$E" = "1200" ] || { echo "::error::employees=$E"; exit 1; }
+          echo "both schemas load cleanly with every foreign key satisfied"
