@@ -5,7 +5,7 @@
 # datasets already loaded, JupyterLab, and all 53 chapter notebooks. Run it
 # and start practising -- no dataset generation, no loading, no configuration.
 #
-#   docker run -d -p 8888:8888 -p 5432:5432 bilearner/postgres1000-practice:1.0
+#   docker run -d -p 8888:8888 -p 5432:5432 bilearner/postgres1000-practice:1.1
 # ---------------------------------------------------------------------------
 FROM postgres:16.15-bookworm
 

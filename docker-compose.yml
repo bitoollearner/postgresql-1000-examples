@@ -6,7 +6,7 @@
 # To build the image yourself instead, see practice-image/README.md.
 services:
   practice:
-    image: bilearner/postgres1000-practice:1.0
+    image: bilearner/postgres1000-practice:1.1
     container_name: pg1000-practice
     ports:
       - "8888:8888"     # JupyterLab

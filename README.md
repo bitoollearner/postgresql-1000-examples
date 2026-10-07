@@ -17,7 +17,7 @@ which is free for personal use, and nothing else.
 ```bash
 docker run -d --name pg1000-practice \
   -p 8888:8888 -p 5432:5432 \
-  bilearner/postgres1000-practice:1.0
+  bilearner/postgres1000-practice:1.1
 ```
 
 Then open **<http://localhost:8888/lab>**.
@@ -32,7 +32,7 @@ Hub's anonymous pull limit gets in your way on a shared network:
 ```bash
 docker run -d --name pg1000-practice \
   -p 8888:8888 -p 5432:5432 \
-  ghcr.io/bitoollearner/postgres1000-practice:1.0
+  ghcr.io/bitoollearner/postgres1000-practice:1.1
 ```
 
 To connect your own client instead — pgAdmin, DBeaver, DataGrip, PyCharm:

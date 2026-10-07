@@ -19,7 +19,7 @@ param(
     [switch]$Force,
     [int]$PgPort      = 5432,
     [int]$JupyterPort = 8888,
-    [string]$Image = "bilearner/postgres1000-practice:1.0",
+    [string]$Image = "bilearner/postgres1000-practice:1.1",
     [string]$Name  = "pg1000-acceptance",
     [int]$ExpectedNotebooks = 53
 )

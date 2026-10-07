@@ -14,7 +14,7 @@ mkdir -p practice
 docker run --rm \
   -p 8888:8888 -p 5432:5432 \
   -v $(pwd)/practice:/practice \
-  bilearner/postgres1000-practice:1.0
+  bilearner/postgres1000-practice:1.1
 ```
 
 Windows PowerShell:
@@ -23,14 +23,14 @@ mkdir practice -Force
 docker run --rm `
   -p 8888:8888 -p 5432:5432 `
   -v ${PWD}/practice:/practice `
-  bilearner/postgres1000-practice:1.0
+  bilearner/postgres1000-practice:1.1
 ```
 
 Open http://localhost:8888 in your browser. JupyterLab opens with 53 chapter
 folders, each holding that chapter's notebook and room for your own files.
 
 Also on GitHub Container Registry, if Docker Hub's anonymous pull limit gets in
-your way: `ghcr.io/bitoollearner/postgres1000-practice:1.0`
+your way: `ghcr.io/bitoollearner/postgres1000-practice:1.1`
 
 ## What's in the image
 
@@ -92,7 +92,7 @@ counts. Paste its output into any errata report.
 
 | Tag | What it is |
 |---|---|
-| `1.0` | pinned release - use this one |
+| `1.1` | pinned release - use this one |
 | `latest` | most recent release |
 
 Released through the build workflow for `linux/amd64` and `linux/arm64`, so

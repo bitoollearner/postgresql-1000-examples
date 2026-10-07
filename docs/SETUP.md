@@ -17,7 +17,7 @@ Start Docker Desktop and wait for *Engine running* before going on.
 ```bash
 docker run -d --name pg1000-practice \
   -p 8888:8888 -p 5432:5432 \
-  bilearner/postgres1000-practice:1.0
+  bilearner/postgres1000-practice:1.1
 ```
 
 Open <http://localhost:8888/lab>. That is the whole setup.

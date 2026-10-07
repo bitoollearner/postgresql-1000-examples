@@ -41,7 +41,7 @@ planner correctly prefers a sequential scan and the lesson inverts.
 Map different host ports:
 
 ```bash
-docker run -d -p 8889:8888 -p 5433:5432 bilearner/postgres1000-practice:1.0
+docker run -d -p 8889:8888 -p 5433:5432 bilearner/postgres1000-practice:1.1
 ```
 
 Connect on 5433, browse on 8889. The ports inside the container do not change.
@@ -71,7 +71,7 @@ five before investigating.
 docker rm -f pg1000-practice
 docker volume rm pg1000-work      # if you created one
 docker run -d --name pg1000-practice -p 8888:8888 -p 5432:5432 \
-  bilearner/postgres1000-practice:1.0
+  bilearner/postgres1000-practice:1.1
 ```
 
 The database lives inside the image, so a fresh container is always a fresh,
