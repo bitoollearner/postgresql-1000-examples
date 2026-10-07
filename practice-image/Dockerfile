@@ -23,12 +23,15 @@ LABEL org.opencontainers.image.title="PostgreSQL: 1,000 Examples -- Practice Env
 # text depends on this. initdb takes its locale from the environment and the
 # base image's default has changed between releases, so it is set explicitly
 # rather than inherited.
+#
+# POSTGRES_USER / POSTGRES_PASSWORD / POSTGRES_DB are deliberately NOT set.
+# The official image's entrypoint reads them, and this image replaces that
+# entrypoint entirely -- so they did nothing here except bake a credential
+# into the image metadata and trip BuildKit's SecretsUsedInArgOrEnv lint. The
+# role, database and password are created explicitly in the build below.
 ENV LANG=C \
     LC_ALL=C \
     PGDATA=/var/lib/pgsql/data \
-    POSTGRES_USER=book \
-    POSTGRES_PASSWORD=book \
-    POSTGRES_DB=pg1000 \
     PRACTICE_DIR=/practice \
     JUPYTER_PORT=8888 \
     PYTHONUNBUFFERED=1 \
@@ -71,6 +74,15 @@ COPY datasets/           /opt/book-datasets/
 # data, then shut down cleanly. Doing all of this at build time is what makes
 # the image start in seconds with nothing to load.
 #
+# The appended pg_hba.conf line is what makes the published port usable at
+# all. `initdb --auth=trust` writes rules for the Unix socket and for
+# 127.0.0.1 only; a connection from the host through `-p 5432:5432` reaches
+# PostgreSQL from the Docker bridge address instead, matches no rule, and is
+# refused with "no pg_hba.conf entry for host". The official image's
+# entrypoint adds this line itself, which is why bypassing that entrypoint
+# means adding it here. scram-sha-256 rather than trust, so the port that is
+# exposed to the network actually asks for the password the docs give.
+#
 # ANALYZE, not VACUUM ANALYZE, because that is what the book's loader runs.
 # VACUUM creates the free space and visibility map forks, which
 # pg_total_relation_size counts -- so a vacuumed cluster reports every table
@@ -83,6 +95,7 @@ RUN set -eux; \
       initdb -D "$PGDATA" --username=book --auth=trust \
              --encoding=UTF8 --locale=C >/dev/null; \
       export PGUSER=book; \
+      printf "host all all all scram-sha-256\n" >> "$PGDATA/pg_hba.conf"; \
       pg_ctl -D "$PGDATA" -w -t 60 \
         -o "-c config_file=/etc/postgresql/postgresql.conf -c listen_addresses=" \
         start; \

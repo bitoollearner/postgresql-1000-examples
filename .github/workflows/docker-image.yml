@@ -16,6 +16,17 @@ on:
 
 env:
   IMAGE: bilearner/postgres1000-practice
+  # The same image is published to GitHub's registry as well. It costs
+  # nothing, needs no secret -- GITHUB_TOKEN covers it -- and public images
+  # there have no pull rate limit, which Docker Hub's anonymous 100-pulls-per
+  # -6-hours does. That limit is counted per IP, so it only bites readers
+  # behind a shared corporate address, but when the fix is one extra tag
+  # there is no reason to leave them without a second source.
+  GHCR: ghcr.io/bitoollearner/postgres1000-practice
+
+permissions:
+  contents: read
+  packages: write        # required to push to ghcr.io
 
 jobs:
   build:
@@ -33,12 +44,20 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: Log in to GitHub Container Registry
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Derive tags
         id: meta
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
           if [ "${{ github.event_name }}" = "push" ]; then
-            echo "tags=${IMAGE}:${VERSION},${IMAGE}:latest" >> "$GITHUB_OUTPUT"
+            echo "tags=${IMAGE}:${VERSION},${IMAGE}:latest,${GHCR}:${VERSION},${GHCR}:latest" >> "$GITHUB_OUTPUT"
             echo "push=true" >> "$GITHUB_OUTPUT"
             echo "platforms=linux/amd64,linux/arm64" >> "$GITHUB_OUTPUT"
           else
@@ -85,6 +104,20 @@ jobs:
           EXT=$(docker exec t psql -U book -d pg1000 -tAX -c \
             "SELECT count(*) FROM pg_extension")
           [ "$EXT" -ge 8 ] || { echo "::error::only $EXT extensions installed"; exit 1; }
+
+          # Connect over TCP from OUTSIDE the container, which is what every
+          # pgAdmin / DBeaver / DataGrip reader does. This is not the same
+          # path as `docker exec psql`, which uses the Unix socket -- an
+          # image whose pg_hba.conf lacks a rule for the Docker bridge passes
+          # every in-container check and refuses every real client.
+          sudo apt-get install -y --no-install-recommends postgresql-client >/dev/null
+          PGPASSWORD=book psql -h 127.0.0.1 -p 5432 -U book -d pg1000 -tAXc \
+            "SELECT 'external connection ok'" || \
+            { echo "::error::cannot connect from outside the container"; exit 1; }
+          PGPASSWORD=wrong psql -h 127.0.0.1 -p 5432 -U book -d pg1000 -tAXc \
+            "SELECT 1" 2>/dev/null && \
+            { echo "::error::the exposed port accepts a wrong password"; exit 1; }
+          echo "external TCP works and requires the password"
 
           for i in $(seq 1 45); do
             curl -sf http://localhost:8888/api >/dev/null && break || sleep 2

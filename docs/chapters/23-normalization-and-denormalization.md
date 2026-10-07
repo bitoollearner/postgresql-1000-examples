@@ -21,4 +21,4 @@ Examples 494–509 · Part V: Data Modeling
 | 508 | Normalise an inherited wide table | Intermediate |
 | 509 | Choosing a normalisation level | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

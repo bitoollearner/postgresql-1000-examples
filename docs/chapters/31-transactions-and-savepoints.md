@@ -18,4 +18,4 @@ Examples 650–662 · Part VII: Objects, Transactions and Programming
 | 661 | Transaction identifiers and age | Intermediate |
 | 662 | Choosing transaction boundaries | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

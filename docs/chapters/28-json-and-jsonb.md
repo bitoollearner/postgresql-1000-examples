@@ -24,4 +24,4 @@ Examples 596–614 · Part VI: PostgreSQL's Distinctive Types
 | 613 | JSONB versus normalised columns | Advanced |
 | 614 | Choosing a JSON strategy | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

@@ -25,4 +25,4 @@ Examples 778–797 · Part VIII: Performance
 | 796 | Partitioning an existing large table | Advanced |
 | 797 | Choosing a maintenance strategy | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

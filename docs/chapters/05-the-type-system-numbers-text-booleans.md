@@ -25,4 +25,4 @@ Examples 35–54 · Part II: Data Definition and Types
 | 53 | Type coercion in comparisons and unions | Intermediate |
 | 54 | Choosing types for a new table | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

@@ -21,4 +21,4 @@ Examples 189–204 · Part III: Querying
 | 203 | NaN and infinity behave unlike IEEE | Advanced |
 | 204 | Choosing numeric operations for money | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

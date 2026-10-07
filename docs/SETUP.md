@@ -1,5 +1,17 @@
 # Setup
 
+## Install Docker Desktop first
+
+Free for personal use, and the only thing you need to install:
+
+- All platforms: <https://docs.docker.com/get-started/get-docker/>
+- Windows: <https://docs.docker.com/desktop/setup/install/windows-install/>
+- macOS: <https://docs.docker.com/desktop/setup/install/mac-install/>
+- Linux: <https://docs.docker.com/desktop/setup/install/linux/>
+
+On Windows it needs WSL 2; the installer handles that and asks for a restart.
+Start Docker Desktop and wait for *Engine running* before going on.
+
 ## The one-command route
 
 ```bash

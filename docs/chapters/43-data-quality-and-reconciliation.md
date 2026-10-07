@@ -19,4 +19,4 @@ Examples 849–862 · Part IX: Data Engineering
 | 861 | A data quality framework | Advanced |
 | 862 | Designing for data quality | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

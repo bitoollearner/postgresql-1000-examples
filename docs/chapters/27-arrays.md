@@ -30,4 +30,4 @@ Examples 571–595 · Part VI: PostgreSQL's Distinctive Types
 | 594 | Arrays with generate_series and cross joins | Intermediate |
 | 595 | Choosing arrays over rows | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

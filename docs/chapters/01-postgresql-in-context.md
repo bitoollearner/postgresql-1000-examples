@@ -10,4 +10,4 @@ Examples 1–5 · Part I: Getting Started
 | 4 | Discover which extensions are installed | Beginner |
 | 5 | The settings that silently change your results | Intermediate |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

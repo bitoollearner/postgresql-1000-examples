@@ -19,4 +19,4 @@ Examples 863–876 · Part IX: Data Engineering
 | 875 | Partial failure and cleanup | Advanced |
 | 876 | Where orchestration logic belongs | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

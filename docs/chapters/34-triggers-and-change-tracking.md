@@ -18,4 +18,4 @@ Examples 699–711 · Part VII: Objects, Transactions and Programming
 | 710 | Event triggers on DDL | Intermediate |
 | 711 | When not to use a trigger | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

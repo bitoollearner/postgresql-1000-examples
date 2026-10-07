@@ -27,4 +27,4 @@ Examples 67–88 · Part II: Data Definition and Types
 | 87 | Constraints let the planner reason | Intermediate |
 | 88 | Designing a complete constraint set | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

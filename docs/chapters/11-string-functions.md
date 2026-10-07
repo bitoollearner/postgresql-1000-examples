@@ -33,4 +33,4 @@ Examples 161–188 · Part III: Querying
 | 187 | Build a text cleanup pipeline | Advanced |
 | 188 | Choosing a text matching strategy | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

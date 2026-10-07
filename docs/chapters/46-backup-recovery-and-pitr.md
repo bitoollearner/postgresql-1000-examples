@@ -16,4 +16,4 @@ Examples 890–900 · Part X: Production Operations
 | 899 | A recovery drill | Advanced |
 | 900 | Choosing a backup strategy | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

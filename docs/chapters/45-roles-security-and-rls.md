@@ -18,4 +18,4 @@ Examples 877–889 · Part X: Production Operations
 | 888 | A security review | Advanced |
 | 889 | Designing an access model | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

@@ -22,4 +22,4 @@ Examples 712–728 · Part VIII: Performance
 | 727 | Diagnose a missing index | Advanced |
 | 728 | Choosing what to index | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

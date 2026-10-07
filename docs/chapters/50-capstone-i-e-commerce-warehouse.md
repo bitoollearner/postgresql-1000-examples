@@ -27,4 +27,4 @@ Examples 927–948 · Part XI: Capstone Projects
 | 947 | Capstone I: the complete pipeline | Advanced |
 | 948 | Capstone I: reviewing the design | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

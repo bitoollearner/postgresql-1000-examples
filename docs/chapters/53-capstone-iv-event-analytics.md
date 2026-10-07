@@ -21,4 +21,4 @@ Examples 985–1000 · Part XI: Capstone Projects
 | 999 | Capstone IV: the complete analytics pipeline | Advanced |
 | 1000 | Capstone IV: what the whole book was for | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

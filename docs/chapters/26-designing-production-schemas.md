@@ -20,4 +20,4 @@ Examples 556–570 · Part V: Data Modeling
 | 569 | Review a schema before it ships | Advanced |
 | 570 | Design a production schema end to end | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

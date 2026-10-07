@@ -31,4 +31,4 @@ Examples 510–535 · Part V: Data Modeling
 | 534 | Build a star schema from the operational model | Advanced |
 | 535 | Choosing a dimensional design | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

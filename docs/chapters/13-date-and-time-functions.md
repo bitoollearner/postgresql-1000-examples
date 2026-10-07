@@ -41,4 +41,4 @@ Examples 205–240 · Part III: Querying
 | 239 | A reporting calendar with fiscal periods and holidays | Advanced |
 | 240 | Choosing date functions for a reporting layer | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

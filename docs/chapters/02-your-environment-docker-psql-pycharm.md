@@ -13,4 +13,4 @@ Examples 6–13 · Part I: Getting Started
 | 12 | Measure how long a query takes | Beginner |
 | 13 | Find the configuration file and data directory | Beginner |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

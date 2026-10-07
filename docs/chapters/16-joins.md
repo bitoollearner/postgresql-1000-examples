@@ -50,4 +50,4 @@ Examples 291–335 · Part III: Querying
 | 334 | Diagnose a slow join | Advanced |
 | 335 | Choosing a join strategy | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

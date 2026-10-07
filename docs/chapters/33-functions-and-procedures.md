@@ -27,4 +27,4 @@ Examples 677–698 · Part VII: Objects, Transactions and Programming
 | 697 | Recursive and mutually recursive functions | Intermediate |
 | 698 | Testing and versioning functions | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

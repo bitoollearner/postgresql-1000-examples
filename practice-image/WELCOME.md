@@ -1,6 +1,6 @@
 # Start here
 
-Welcome to the practice environment for **[PostgreSQL: 1,000 Examples](https://www.amazon.com/dp/YOUR-REAL-ASIN)**.
+Welcome to the practice environment for **[PostgreSQL: 1,000 Examples](https://www.amazon.com/dp/REPLACE-WITH-ASIN)**.
 
 Everything is already running. PostgreSQL 16.15 is up with the book's
 datasets loaded, and the 53 chapter notebooks are in this folder.
@@ -42,14 +42,23 @@ Or point any client at `postgresql://book:book@localhost:5432/pg1000`.
 | `hr` | 1,200 employees. Chapter 49. |
 | `ecommerce_lg` | 2,000,000 orders. Part VIII only — load it on demand. |
 
-Part VIII is about index selection, partition pruning and BRIN, none of which
-can be demonstrated on five thousand rows. When you get there:
+**Before you start Part VIII (chapters 35-39), read this.** Those chapters
+query `ecommerce_lg`, and it is not in the image. Until you load it, every
+example in that part fails with `relation "..." does not exist` - which looks
+like broken SQL and is not.
 
 ```bash
 docker exec -it pg1000-practice load-large-dataset
 ```
 
-About three minutes and 850 MB.
+About three minutes and 850 MB, and it prints nothing until it finishes. Each
+of those five notebooks opens with a cell that checks for you and says whether
+you are ready, so you do not have to remember this.
+
+It is not preloaded because index selection, partition pruning and BRIN cannot
+be demonstrated on five thousand rows - at that size the planner correctly
+prefers a sequential scan and every lesson in the part inverts. Paying 850 MB
+for it up front, on every reader, for one part of eleven, was the worse trade.
 
 The data contains deliberate defects — NULL emails, customers who never
 ordered, orders with no payment, employees reporting to managers who have

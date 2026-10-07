@@ -23,4 +23,4 @@ Examples 336–353 · Part IV: Composition and Analytics
 | 352 | Read the plan for correlated and uncorrelated subqueries | Advanced |
 | 353 | Choosing between subquery, join, CTE and LATERAL | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

@@ -65,4 +65,4 @@ Examples 386–445 · Part IV: Composition and Analytics
 | 444 | Window, GROUP BY or LATERAL | Advanced |
 | 445 | Choosing a window strategy | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

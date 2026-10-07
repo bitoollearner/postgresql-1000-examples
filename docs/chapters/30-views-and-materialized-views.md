@@ -25,4 +25,4 @@ Examples 630–649 · Part VII: Objects, Transactions and Programming
 | 648 | Refresh strategies compared | Advanced |
 | 649 | Choosing between view, materialized view and table | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

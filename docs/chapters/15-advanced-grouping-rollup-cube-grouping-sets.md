@@ -17,4 +17,4 @@ Examples 279–290 · Part III: Querying
 | 289 | How the planner executes grouping sets | Advanced |
 | 290 | Choosing a grouping strategy for a report | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

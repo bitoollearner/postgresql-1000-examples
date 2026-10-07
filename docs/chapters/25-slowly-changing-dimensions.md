@@ -25,4 +25,4 @@ Examples 536–555 · Part V: Data Modeling
 | 554 | A complete Type 2 load | Advanced |
 | 555 | Choosing an SCD type | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

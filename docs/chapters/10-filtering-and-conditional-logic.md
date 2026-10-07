@@ -31,4 +31,4 @@ Examples 135–160 · Part III: Querying
 | 159 | Make a predicate index-friendly | Advanced |
 | 160 | OR conditions, BitmapOr, and the UNION rewrite | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

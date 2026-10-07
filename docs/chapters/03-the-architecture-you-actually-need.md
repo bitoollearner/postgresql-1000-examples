@@ -12,4 +12,4 @@ Examples 14–20 · Part I: Getting Started
 | 19 | What the planner knows about your data | Beginner |
 | 20 | Where the processes and memory go | Beginner |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

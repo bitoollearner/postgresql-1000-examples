@@ -19,4 +19,4 @@ Examples 21–34 · Part II: Data Definition and Types
 | 33 | Drop objects safely with IF EXISTS and CASCADE | Beginner |
 | 34 | Document a schema with COMMENT | Intermediate |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

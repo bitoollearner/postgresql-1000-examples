@@ -21,4 +21,4 @@ Examples 762–777 · Part VIII: Performance
 | 776 | Optimise a slow query end to end | Advanced |
 | 777 | Knowing when to stop optimising | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

@@ -29,4 +29,4 @@ Examples 89–112 · Part II: Data Definition and Types
 | 111 | Update large tables in batches | Advanced |
 | 112 | Choosing a write strategy | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

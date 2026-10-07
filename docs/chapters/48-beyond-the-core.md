@@ -9,4 +9,4 @@ Examples 913–916 · Part X: Production Operations
 | 915 | Extension versions and upgrades | Intermediate |
 | 916 | Choosing what to add | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

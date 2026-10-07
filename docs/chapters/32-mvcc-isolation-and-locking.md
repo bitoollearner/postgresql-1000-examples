@@ -19,4 +19,4 @@ Examples 663–676 · Part VII: Objects, Transactions and Programming
 | 675 | HOT updates | Intermediate |
 | 676 | Choosing an isolation level | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

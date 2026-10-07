@@ -17,4 +17,4 @@ Examples 901–912 · Part X: Production Operations
 | 911 | A monitoring query set | Advanced |
 | 912 | Designing observability | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

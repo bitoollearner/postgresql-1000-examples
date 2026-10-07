@@ -20,4 +20,4 @@ Examples 615–629 · Part VI: PostgreSQL's Distinctive Types
 | 628 | Index support across the distinctive types | Advanced |
 | 629 | Choosing among PostgreSQL's distinctive types | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

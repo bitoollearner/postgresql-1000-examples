@@ -17,4 +17,4 @@ Examples 374–385 · Part IV: Composition and Analytics
 | 384 | Read the plan for a recursive CTE | Advanced |
 | 385 | Choosing a hierarchy model | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

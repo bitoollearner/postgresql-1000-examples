@@ -19,7 +19,7 @@ PROMPT = re.compile(r"^%%sql\s*\n--\s*Example \d+\. Your answer here\.\s*$")
 
 
 def main():
-    books = sorted(NB.glob("*.ipynb"))
+    books = sorted(NB.glob("*/*.ipynb"))   # one folder per chapter
     if not books:
         print("no notebooks found")
         return 1

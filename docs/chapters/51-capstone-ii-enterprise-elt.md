@@ -25,4 +25,4 @@ Examples 949–968 · Part XI: Capstone Projects
 | 967 | Capstone II: the complete ELT run | Advanced |
 | 968 | Capstone II: reviewing the platform | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

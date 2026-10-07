@@ -23,4 +23,4 @@ Examples 815–832 · Part IX: Data Engineering
 | 831 | A complete incremental pipeline | Advanced |
 | 832 | Choosing a change-capture strategy | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

@@ -15,4 +15,4 @@ Examples 917–926 · Part XI: Capstone Projects
 | 925 | HR project: absence and available capacity | Intermediate |
 | 926 | HR project: the workforce mart, and reviewing the design | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

@@ -33,4 +33,4 @@ Examples 446–473 · Part IV: Composition and Analytics
 | 472 | Build a customer 360 summary | Advanced |
 | 473 | Choosing an analytical pattern | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

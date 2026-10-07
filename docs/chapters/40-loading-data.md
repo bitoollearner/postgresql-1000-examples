@@ -22,4 +22,4 @@ Examples 798–814 · Part IX: Data Engineering
 | 813 | Measure load performance | Advanced |
 | 814 | Design a loading pipeline | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

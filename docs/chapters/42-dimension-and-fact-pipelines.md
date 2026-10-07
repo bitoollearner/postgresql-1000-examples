@@ -21,4 +21,4 @@ Examples 833–848 · Part IX: Data Engineering
 | 847 | A complete warehouse load | Advanced |
 | 848 | Designing a warehouse pipeline | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

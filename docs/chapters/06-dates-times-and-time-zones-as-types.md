@@ -17,4 +17,4 @@ Examples 55–66 · Part II: Data Definition and Types
 | 65 | Build and decompose intervals | Intermediate |
 | 66 | Choosing date and time types for a schema | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

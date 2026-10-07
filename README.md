@@ -1,6 +1,6 @@
 # PostgreSQL: 1,000 Examples — Companion
 
-The practice environment for **[PostgreSQL: 1,000 Examples](https://www.amazon.com/dp/YOUR-REAL-ASIN)** by Bi Learner.
+The practice environment for **[PostgreSQL: 1,000 Examples](https://www.amazon.com/dp/REPLACE-WITH-ASIN)** by Bi Learner.
 
 [![Practice image](https://img.shields.io/docker/v/bilearner/postgres1000-practice?label=docker&logo=docker)](https://hub.docker.com/r/bilearner/postgres1000-practice)
 [![Image size](https://img.shields.io/docker/image-size/bilearner/postgres1000-practice/latest?label=size)](https://hub.docker.com/r/bilearner/postgres1000-practice)
@@ -11,6 +11,9 @@ The practice environment for **[PostgreSQL: 1,000 Examples](https://www.amazon.c
 
 ## Start practising in one command
 
+You need [Docker Desktop](https://docs.docker.com/get-started/get-docker/),
+which is free for personal use, and nothing else.
+
 ```bash
 docker run -d --name pg1000-practice \
   -p 8888:8888 -p 5432:5432 \
@@ -20,8 +23,17 @@ docker run -d --name pg1000-practice \
 Then open **<http://localhost:8888/lab>**.
 
 PostgreSQL 16.15 is already running with the book's datasets loaded and
-all 53 chapter notebooks waiting. There is nothing to generate, nothing to
+all 53 chapter folders waiting. There is nothing to generate, nothing to
 load, and nothing to configure. First start is a few seconds.
+
+The same image is on GitHub's registry too, if you prefer it or if Docker
+Hub's anonymous pull limit gets in your way on a shared network:
+
+```bash
+docker run -d --name pg1000-practice \
+  -p 8888:8888 -p 5432:5432 \
+  ghcr.io/bitoollearner/postgres1000-practice:1.0
+```
 
 To connect your own client instead — pgAdmin, DBeaver, DataGrip, PyCharm:
 
@@ -68,7 +80,7 @@ That is the deal: the environment and the problems are free and open, and the
 answers are what you buy. The notebooks here give you the question and a blank
 cell — work it out, then check yourself against the book.
 
-**[Get the book on Amazon Kindle](https://www.amazon.com/dp/YOUR-REAL-ASIN)**
+**[Get the book on Amazon Kindle](https://www.amazon.com/dp/REPLACE-WITH-ASIN)**
 
 ---
 

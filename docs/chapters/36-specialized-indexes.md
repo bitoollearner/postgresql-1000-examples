@@ -21,4 +21,4 @@ Examples 729–744 · Part VIII: Performance
 | 743 | Index-only scans on specialized indexes | Intermediate |
 | 744 | Choosing an index type | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

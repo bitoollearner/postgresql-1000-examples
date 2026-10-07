@@ -43,4 +43,4 @@ Examples 241–278 · Part III: Querying
 | 277 | Aggregate over a rolling window of days | Advanced |
 | 278 | Decide when an aggregate should be materialised | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

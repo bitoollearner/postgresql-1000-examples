@@ -25,4 +25,4 @@ Examples 474–493 · Part V: Data Modeling
 | 492 | Read a model from the catalog | Advanced |
 | 493 | Design a relational model end to end | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

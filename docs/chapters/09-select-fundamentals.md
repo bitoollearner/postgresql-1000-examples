@@ -27,4 +27,4 @@ Examples 113–134 · Part III: Querying
 | 133 | Identifier case folding and quoting | Intermediate |
 | 134 | The logical order a SELECT is evaluated in | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

@@ -22,4 +22,4 @@ Examples 745–761 · Part VIII: Performance
 | 760 | Plan stability and prepared statements | Advanced |
 | 761 | A plan-reading checklist | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).

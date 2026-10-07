@@ -21,4 +21,4 @@ Examples 969–984 · Part XI: Capstone Projects
 | 983 | Capstone III: the complete scoring run | Advanced |
 | 984 | Capstone III: reviewing the design | Advanced |
 
-The solutions and explanations are in [the book](https://www.amazon.com/dp/YOUR-REAL-ASIN).
+The solutions and explanations are in [the book](https://www.amazon.com/dp/REPLACE-WITH-ASIN).
